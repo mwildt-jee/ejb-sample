@@ -2,7 +2,6 @@ package de.hsw.sample.ejb.core.service;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -42,5 +41,7 @@ public class UserServiceHashMapImpl implements UserService {
 		String hash = passwordUtil.encode(user.getUsername(), password);
 		return hash.equals(user.getPassword());
 	}
+	
+
 	
 }

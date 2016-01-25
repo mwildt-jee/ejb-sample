@@ -27,7 +27,6 @@ public class ShowUserAction extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		String username = request.getParameter("username");
 		
 		User user = userService.getByUsername(username);
